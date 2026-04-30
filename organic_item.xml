@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    app:cardCornerRadius="18dp"
+    app:cardElevation="6dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center_vertical">
+
+        <!-- Organic Image -->
+
+        <ImageView
+            android:id="@+id/organicImage"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/image_rounded_bg"
+            android:padding="4dp"/>
+
+        <!-- Text Content -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="12dp">
+
+            <!-- Organic Name -->
+
+            <TextView
+                android:id="@+id/organicName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Organic Farming Method"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#222"
+                android:maxLines="2"/>
+
+            <!-- Description -->
+
+            <TextView
+                android:id="@+id/organicDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Organic farming improves soil fertility and avoids harmful chemicals."
+                android:textSize="13sp"
+                android:textColor="#666"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:layout_marginTop="4dp"/>
+
+        </LinearLayout>
+
+        <!-- Arrow Icon -->
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/baseline_arrow_forward_ios_24"
+            android:tint="#888"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

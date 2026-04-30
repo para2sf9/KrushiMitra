@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundGreen"
+    android:fitsSystemWindows="true">
+
+    <!-- Fragment Container -->
+
+    <!-- Bottom Navigation Container -->
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="70dp" />
+
+    <FrameLayout
+        android:id="@+id/bottomFramelayout"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_gravity="bottom">
+
+        <!-- Bottom Navigation -->
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            style="@style/Widget.App.BottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="bottom"
+            android:background="@color/primaryGreen"
+            app:itemIconTint="@color/white"
+            app:itemRippleColor="@color/faintGreen"
+            app:itemTextColor="@color/white"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/custom_bottom_menu">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/scan_button"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_gravity="top|center_horizontal"
+                android:src="@drawable/baseline_qr_code_scanner_24"
+                app:backgroundTint="@color/accentYellow"
+                app:borderWidth="0dp"
+                app:elevation="12dp"
+                app:fabCustomSize="64dp"
+                app:maxImageSize="32dp"
+                app:tint="@color/textDark" />
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <!-- Center Scan Button -->
+
+    </FrameLayout>
+
+</FrameLayout>

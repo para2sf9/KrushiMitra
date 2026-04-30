@@ -1,0 +1,67 @@
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- ICON -->
+        <ImageView
+            android:id="@+id/bottomIcon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- TITLE -->
+        <TextView
+            android:id="@+id/bottomTitle"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#1B5E20"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- DESCRIPTION -->
+        <TextView
+            android:id="@+id/bottomDesc"
+            android:textSize="14sp"
+            android:textColor="#444"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- KEY TIP -->
+        <TextView
+            android:id="@+id/bottomKey"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="#0D47A1"
+            android:background="@drawable/bg_key_tip"
+            android:padding="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- BENEFIT -->
+        <TextView
+            android:id="@+id/bottomBenefit"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#2E7D32"
+            android:background="@drawable/bg_benefit"
+            android:padding="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

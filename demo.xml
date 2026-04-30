@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FAF9">
+
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:fillViewport="true"-->
+<!--        android:scrollbars="none">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical"-->
+<!--            android:paddingBottom="40dp">-->
+
+<!--            &lt;!&ndash; 🌅 PREMIUM HERO SECTION &ndash;&gt;-->
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="240dp">-->
+
+<!--                <com.google.android.material.imageview.ShapeableImageView-->
+<!--                    android:id="@+id/hero_img"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:scaleType="centerCrop"-->
+<!--                    android:src="@drawable/plant_nutrient_pyramid"-->
+<!--                    app:shapeAppearanceOverlay="@style/RoundedBottomCorners" />-->
+
+<!--                <View-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:background="@drawable/black_gradient_overlay" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_alignParentBottom="true"-->
+<!--                    android:layout_marginStart="24dp"-->
+<!--                    android:layout_marginBottom="24dp"-->
+<!--                    android:fontFamily="sans-serif-black"-->
+<!--                    android:text="Fertilizer Guide"-->
+<!--                    android:textColor="#FFFFFF"-->
+<!--                    android:textSize="28sp" />-->
+<!--            </RelativeLayout>-->
+
+<!--            &lt;!&ndash; 📄 INTRO CARD (Glassmorphism effect) &ndash;&gt;-->
+<!--            <com.google.android.material.card.MaterialCardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginHorizontal="20dp"-->
+<!--                android:layout_marginTop="-20dp"-->
+<!--                app:cardCornerRadius="20dp"-->
+<!--                app:cardElevation="6dp">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:lineSpacingExtra="4dp"-->
+<!--                    android:padding="20dp"-->
+<!--                    android:text="Plants need 17 essential nutrients. While some come from air and water, others must be added through soil and fertilizers."-->
+<!--                    android:textColor="#444"-->
+<!--                    android:textSize="14sp" />-->
+<!--            </com.google.android.material.card.MaterialCardView>-->
+
+<!--            &lt;!&ndash; 🧪 NUTRIENT TYPES &ndash;&gt;-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="24dp"-->
+<!--                android:layout_marginTop="28dp"-->
+<!--                android:letterSpacing="0.05"-->
+<!--                android:text="Primary Nutrients (NPK)"-->
+<!--                android:textColor="#1B5E20"-->
+<!--                android:textSize="15sp"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            &lt;!&ndash; NPK Indicators &ndash;&gt;-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="12dp"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:paddingHorizontal="16dp"-->
+<!--                android:weightSum="3">-->
+
+<!--                &lt;!&ndash; Nitrogen &ndash;&gt;-->
+<!--                <com.google.android.material.card.MaterialCardView-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="110dp"-->
+<!--                    android:layout_margin="4dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    app:cardCornerRadius="16dp"-->
+<!--                    app:cardElevation="1dp"-->
+<!--                    app:strokeColor="#C8E6C9"-->
+<!--                    app:strokeWidth="1dp">-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:gravity="center"-->
+<!--                        android:orientation="vertical"-->
+<!--                        android:padding="8dp">-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="N"-->
+<!--                            android:textColor="#2E7D32"-->
+<!--                            android:textSize="24sp"-->
+<!--                            android:textStyle="bold" />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:gravity="center"-->
+<!--                            android:text="Leaf growth"-->
+<!--                            android:textColor="#666"-->
+<!--                            android:textSize="10sp" />-->
+<!--                    </LinearLayout>-->
+<!--                </com.google.android.material.card.MaterialCardView>-->
+
+<!--                &lt;!&ndash; Phosphorus &ndash;&gt;-->
+<!--                <com.google.android.material.card.MaterialCardView-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="110dp"-->
+<!--                    android:layout_margin="4dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    app:cardCornerRadius="16dp"-->
+<!--                    app:cardElevation="1dp"-->
+<!--                    app:strokeColor="#FFCDD2"-->
+<!--                    app:strokeWidth="1dp">-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:gravity="center"-->
+<!--                        android:orientation="vertical"-->
+<!--                        android:padding="8dp">-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="P"-->
+<!--                            android:textColor="#C62828"-->
+<!--                            android:textSize="24sp"-->
+<!--                            android:textStyle="bold" />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:gravity="center"-->
+<!--                            android:text="Root/Flower"-->
+<!--                            android:textColor="#666"-->
+<!--                            android:textSize="10sp" />-->
+<!--                    </LinearLayout>-->
+<!--                </com.google.android.material.card.MaterialCardView>-->
+
+<!--                &lt;!&ndash; Potassium &ndash;&gt;-->
+<!--                <com.google.android.material.card.MaterialCardView-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="110dp"-->
+<!--                    android:layout_margin="4dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    app:cardCornerRadius="16dp"-->
+<!--                    app:cardElevation="1dp"-->
+<!--                    app:strokeColor="#FFE0B2"-->
+<!--                    app:strokeWidth="1dp">-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:gravity="center"-->
+<!--                        android:orientation="vertical"-->
+<!--                        android:padding="8dp">-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="K"-->
+<!--                            android:textColor="#EF6C00"-->
+<!--                            android:textSize="24sp"-->
+<!--                            android:textStyle="bold" />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:gravity="center"-->
+<!--                            android:text="Overall Health"-->
+<!--                            android:textColor="#666"-->
+<!--                            android:textSize="10sp" />-->
+<!--                    </LinearLayout>-->
+<!--                </com.google.android.material.card.MaterialCardView>-->
+<!--            </LinearLayout>-->
+
+<!--            &lt;!&ndash; ⚗️ NPK BREAKDOWN (Clean Table Style) &ndash;&gt;-->
+<!--            <com.google.android.material.card.MaterialCardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginHorizontal="20dp"-->
+<!--                android:layout_marginTop="24dp"-->
+<!--                app:cardCornerRadius="16dp"-->
+<!--                app:cardElevation="2dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:padding="20dp">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Understanding NPK Ratio"-->
+<!--                        android:textColor="#1A1A1A"-->
+<!--                        android:textSize="16sp"-->
+<!--                        android:textStyle="bold" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="4dp"-->
+<!--                        android:text="Example: 10-10-10 means 10% of each nutrient."-->
+<!--                        android:textColor="#888"-->
+<!--                        android:textSize="12sp" />-->
+
+<!--                    <View-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="1dp"-->
+<!--                        android:layout_marginVertical="12dp"-->
+<!--                        android:background="#F0F0F0" />-->
+
+<!--                    &lt;!&ndash; Row 1 &ndash;&gt;-->
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="horizontal">-->
+
+<!--                        <View-->
+<!--                            android:layout_width="4dp"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:background="#2E7D32" />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginStart="12dp"-->
+<!--                            android:text="Nitrogen: For leafy green growth"-->
+<!--                            android:textSize="13sp" />-->
+<!--                    </LinearLayout>-->
+<!--                </LinearLayout>-->
+<!--            </com.google.android.material.card.MaterialCardView>-->
+
+<!--            &lt;!&ndash; 📋 QUICK TIPS &ndash;&gt;-->
+<!--            <com.google.android.material.card.MaterialCardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="20dp"-->
+<!--                app:cardBackgroundColor="#FFFFFF"-->
+<!--                app:cardCornerRadius="20dp"-->
+<!--                app:cardElevation="0dp"-->
+<!--                app:strokeColor="#F0F0F0"-->
+<!--                app:strokeWidth="1dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:padding="16dp">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginBottom="12dp"-->
+<!--                        android:text="Important Tips"-->
+<!--                        android:textColor="#2E7D32"-->
+<!--                        android:textStyle="bold" />-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:gravity="center_vertical"-->
+<!--                        android:paddingVertical="8dp">-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="24dp"-->
+<!--                            android:layout_height="24dp"-->
+<!--                            android:src="@drawable/water"-->
+<!--                            app:tint="#2E7D32" />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginStart="12dp"-->
+<!--                            android:text="Always water plants after fertilizing"-->
+<!--                            android:textSize="13sp" />-->
+<!--                    </LinearLayout>-->
+<!--                </LinearLayout>-->
+<!--            </com.google.android.material.card.MaterialCardView>-->
+
+<!--        </LinearLayout>-->
+<!--    </ScrollView>-->
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

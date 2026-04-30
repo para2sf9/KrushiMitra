@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#F6F8FB"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+
+  <androidx.viewpager2.widget.ViewPager2
+      android:id="@+id/viewPager"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      />
+
+  <!-- BUTTON -->
+
+  <Button
+      android:id="@+id/nextBtn"
+      android:text="Next"
+      android:layout_width="220dp"
+      android:layout_height="55dp"
+      android:layout_alignParentBottom="true"
+      android:layout_margin="20dp"
+      android:layout_alignParentEnd="true"
+      android:background="@drawable/btn_green"
+      android:textColor="@android:color/white"/>
+
+</RelativeLayout>
