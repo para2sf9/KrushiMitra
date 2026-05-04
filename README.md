@@ -1,5 +1,5 @@
 # KrushiMitra
-Agriculture app
+Agriculture app for small scale farmer which will promote rural development
 <img width="378" height="674" alt="image" src="https://github.com/user-attachments/assets/7f3d64ee-3e7f-42b9-9f38-8c667cd87ee3" />
 <img width="398" height="667" alt="image" src="https://github.com/user-attachments/assets/5daef88a-b2bb-4f4e-a30c-1ec9bf51e455" />
 <img width="402" height="669" alt="image" src="https://github.com/user-attachments/assets/d7f35960-d260-4401-9a7f-63f58329dc34" />
